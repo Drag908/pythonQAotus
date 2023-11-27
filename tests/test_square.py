@@ -23,7 +23,7 @@ def test_square_positive(side_a, area, perimetr):
                          }, ids=["integer", "float"])
 def test_square_negative(side_a, area, perimetr):
     with pytest.raises(ValueError):
-        r = Square(side_a)
+        Square(side_a)
 
 
 def test_add_area_square():

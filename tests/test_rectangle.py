@@ -23,7 +23,7 @@ def test_rectangle_positive(side_a, side_b, area, perimetr):
                          }, ids=["integer", "float"])
 def test_rectangle_negative(side_a, side_b, area, perimetr):
     with pytest.raises(ValueError):
-        r = Rectangle(side_a, side_b)
+        Rectangle(side_a, side_b)
 
 
 def test_add_area_rectangle():
