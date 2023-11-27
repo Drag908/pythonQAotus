@@ -1,6 +1,5 @@
 import pytest
 
-from src.circle import Circle
 from src.rectangle import Rectangle
 from src.square import Square
 
@@ -25,9 +24,6 @@ def test_rectangle_positive(side_a, side_b, area, perimetr):
 def test_rectangle_negative(side_a, side_b, area, perimetr):
     with pytest.raises(ValueError):
         r = Rectangle(side_a, side_b)
-        assert r.name == f"Rectangle {side_a} and {side_b}"
-        assert r.get_area() == area
-        assert r.get_perimetr() == perimetr
 
 
 def test_add_area_rectangle():

@@ -24,9 +24,6 @@ def test_square_positive(side_a, area, perimetr):
 def test_square_negative(side_a, area, perimetr):
     with pytest.raises(ValueError):
         r = Square(side_a)
-        assert r.name == f"Rectangle {side_a}"
-        assert r.get_area() == area
-        assert r.get_perimetr() == perimetr
 
 
 def test_add_area_square():

@@ -23,10 +23,7 @@ def test_triangle_positive(side_a, side_b, side_c, area, perimetr):
                          }, ids=["integer", "float"])
 def test_triangle_negative(side_a, side_b, side_c, area, perimetr):
     with pytest.raises(ValueError):
-        r = Triangle(side_a, side_b, side_c)
-        assert r.name == f"Rectangle {side_a} and {side_b} and {side_c}"
-        assert r.get_area() == area
-        assert r.get_perimetr() == perimetr
+        Triangle(side_a, side_b, side_c)
 
 
 def test_add_area_triangle():

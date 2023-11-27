@@ -23,10 +23,7 @@ def test_circle_positive(radius, area, perimetr):
                          }, ids=["integer", "float"])
 def test_circle_negative(radius, area, perimetr):
     with pytest.raises(ValueError):
-        r = Circle(radius)
-        assert r.name == f"Rectangle {radius}"
-        assert r.get_area() == area
-        assert r.get_perimetr() == perimetr
+        Circle(radius)
 
 
 def test_add_area_circle():
